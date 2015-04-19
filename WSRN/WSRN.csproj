@@ -121,6 +121,11 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\41779-wildstar_wallpaper.jpg" />
+    <Content Include="Content\Images\articledev.jpg" />
+    <Content Include="Content\Images\articlepve.jpg" />
+    <Content Include="Content\Images\articlepvp.jpg" />
+    <Content Include="Content\Images\articlerp.jpg" />
+    <Content Include="Content\Images\articleRPnew.jpg" />
     <Content Include="Content\Images\BuckBike.jpg" />
     <Content Include="Content\Images\Celestion2.png" />
     <Content Include="Content\Images\conquestdraken.jpg" />
