@@ -129,7 +129,6 @@
     <Content Include="Content\Images\articlepve.jpg" />
     <Content Include="Content\Images\articlepvp.jpg" />
     <Content Include="Content\Images\articlerp.jpg" />
-    <Content Include="Content\Images\articleRPnew.jpg" />
     <Content Include="Content\Images\BuckBike.jpg" />
     <Content Include="Content\Images\Celestion2.png" />
     <Content Include="Content\Images\conquestdraken.jpg" />
@@ -188,14 +187,22 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\PVE\News.cshtml" />
+    <Content Include="Views\PVE\Articles.cshtml" />
+    <Content Include="Views\PVE\Discussion.cshtml" />
+    <Content Include="Views\PVP\News.cshtml" />
+    <Content Include="Views\PVP\Articles.cshtml" />
+    <Content Include="Views\PVP\Discussion.cshtml" />
+    <Content Include="Views\RP\News.cshtml" />
+    <Content Include="Views\RP\Articles.cshtml" />
+    <Content Include="Views\RP\Discussion.cshtml" />
+    <Content Include="Views\Dev\News.cshtml" />
+    <Content Include="Views\Dev\Articles.cshtml" />
+    <Content Include="Views\Dev\Discussion.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Dev\" />
-    <Folder Include="Views\PVE\" />
-    <Folder Include="Views\PVP\" />
-    <Folder Include="Views\RP\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
