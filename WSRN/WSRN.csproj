@@ -111,7 +111,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DevController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PVEController.cs" />
+    <Compile Include="Controllers\PVPController.cs" />
+    <Compile Include="Controllers\RPController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -136,6 +140,7 @@
     <Content Include="Content\Images\Drusera1280.jpg" />
     <Content Include="Content\Images\esper.jpg" />
     <Content Include="Content\Images\genprime.jpg" />
+    <Content Include="Content\Images\invasion.jpg" />
     <Content Include="Content\Images\landscape_3__wallpaper_wildstar_1920x1080_by_empessah-d7hv6uy.jpg" />
     <Content Include="Content\Images\mischiefofthechua.jpg" />
     <Content Include="Content\Images\riseofcassian.jpg" />
@@ -187,6 +192,10 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Dev\" />
+    <Folder Include="Views\PVE\" />
+    <Folder Include="Views\PVP\" />
+    <Folder Include="Views\RP\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
