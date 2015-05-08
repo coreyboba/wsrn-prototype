@@ -37,6 +37,17 @@ textarea {
 }
 
 .inner {
-    background-color: #ffffff;
-    padding: 10px;
+    padding: 0 10px 0 10px;
 }
+
+.main-news-feed {
+    border-right: 1px solid #aaa;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #aaa;
+}
+

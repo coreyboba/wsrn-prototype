@@ -125,10 +125,6 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\41779-wildstar_wallpaper.jpg" />
-    <Content Include="Content\Images\articledev.jpg" />
-    <Content Include="Content\Images\articlepve.jpg" />
-    <Content Include="Content\Images\articlepvp.jpg" />
-    <Content Include="Content\Images\articlerp.jpg" />
     <Content Include="Content\Images\BuckBike.jpg" />
     <Content Include="Content\Images\Celestion2.png" />
     <Content Include="Content\Images\conquestdraken.jpg" />
@@ -140,9 +136,15 @@
     <Content Include="Content\Images\esper.jpg" />
     <Content Include="Content\Images\genprime.jpg" />
     <Content Include="Content\Images\invasion.jpg" />
+    <Content Include="Content\Images\invasiontest.jpg" />
     <Content Include="Content\Images\landscape_3__wallpaper_wildstar_1920x1080_by_empessah-d7hv6uy.jpg" />
     <Content Include="Content\Images\mischiefofthechua.jpg" />
     <Content Include="Content\Images\riseofcassian.jpg" />
+    <Content Include="Content\Images\spacebackground.jpg" />
+    <Content Include="Content\Images\subheaderdev.jpg" />
+    <Content Include="Content\Images\subheaderinvasion.jpg" />
+    <Content Include="Content\Images\subheaderpvp.jpg" />
+    <Content Include="Content\Images\subheaderrp.jpg" />
     <Content Include="Content\Images\sunderinggranok.jpg" />
     <Content Include="Content\Images\Tempest-Refuge.png" />
     <Content Include="Content\Images\tumblr_nfz5y7SzbI1stahgvo1_1280.png" />
@@ -202,6 +204,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Temp\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
