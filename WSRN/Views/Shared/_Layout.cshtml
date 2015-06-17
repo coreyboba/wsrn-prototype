@@ -9,7 +9,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body style="background-image: url(../../Content/Images/spacebackground.jpg ); background-repeat: no-repeat; background-attachment:fixed;">
-    <div class="navbar navbar-inverse navbar-fixed-top navbar-wsr">
+    <div class="navbar navbar-fixed-top navbar-inverse navbar-wsr" style="background-color: white;">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -17,12 +17,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <span style="padding-right: 50px;">@Html.ActionLink("wildstar radio news", "Index", "Home", new { area = "" }, new { @class = "navbar-brand wsr-font" })</span>
+                <span style="padding-right: 50px;">@Html.ActionLink("WSR", "Index", "Home", new { area = "" }, new { @class = "navbar-brand wsr-font" })</span>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="dropdown" style="padding:0 25px 0 0;">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PVE <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">News <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li>@Html.ActionLink("News", "News", "PVE")</li>
                             <li>@Html.ActionLink("Articles", "Articles", "PVE")</li>
@@ -30,7 +30,7 @@
                         </ul>
                     </li>
                     <li class="dropdown" style="padding:0 25px 0 0;">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PVP <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Articles <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li>@Html.ActionLink("News", "News", "PVP")</li>
                             <li>@Html.ActionLink("Articles", "Articles", "PVP")</li>
@@ -38,7 +38,7 @@
                         </ul>
                     </li>
                     <li class="dropdown" style="padding:0 25px 0 0;">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">RP <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Guides <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li>@Html.ActionLink("News", "News", "RP")</li>
                             <li>@Html.ActionLink("Articles", "Articles", "RP")</li>
@@ -46,7 +46,7 @@
                         </ul>
                     </li>
                     <li class="dropdown" style="padding:0 25px 0 0;">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dev <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Discussion <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li>@Html.ActionLink("News", "News", "Dev")</li>
                             <li>@Html.ActionLink("Articles", "Articles", "Dev")</li>
@@ -57,7 +57,7 @@
             </div>
         </div>
     </div>
-    <div class="container body-content" style="border: 1px solid black; margin-top: 100px; background-color: #fff;">
+    <div class="container body-content" style="border: 1px solid black; background-color: #fff;">
         @RenderBody()
         @*<footer>
                 <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
