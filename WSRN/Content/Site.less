@@ -1,12 +1,12 @@
 ﻿@import "bootstrap/bootstrap";
+@import "site-variables";
 @import "Theme";
 @import "Misc";
 @import "Layout";
 @import "Typography";
 
 body {
-    background-color: @bg-color;
-    padding-top: 50px;
+    
     padding-bottom: 20px;
     
 }
@@ -30,3 +30,11 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.news-feed {
+    .row();
+    .make-sm-column(6);
+    .make-xs-column(6);
+    margin-right: 0;
+}
+

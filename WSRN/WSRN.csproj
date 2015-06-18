@@ -124,6 +124,12 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap\bootstrap.css">
+      <DependentUpon>bootstrap.less</DependentUpon>
+    </Content>
+    <Content Include="Content\bootstrap\bootstrap.min.css">
+      <DependentUpon>bootstrap.css</DependentUpon>
+    </Content>
     <Content Include="Content\Images\41779-wildstar_wallpaper.jpg" />
     <Content Include="Content\Images\BuckBike.jpg" />
     <Content Include="Content\Images\Celestion2.png" />
@@ -239,6 +245,10 @@
     <Content Include="Content\Theme.less" />
     <Content Include="Content\Typography.less" />
     <Content Include="Content\Site.css.map" />
+    <Content Include="Content\site-variables.less" />
+    <Content Include="Content\bootstrap\bootstrap.css.map">
+      <DependentUpon>bootstrap.css</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\WSRN.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -279,6 +289,11 @@
     <Content Include="Views\Dev\News.cshtml" />
     <Content Include="Views\Dev\Articles.cshtml" />
     <Content Include="Views\Dev\Discussion.cshtml" />
+    <Content Include="Views\Home\_NewsFeed.cshtml" />
+    <Content Include="Views\Home\_SideFeed.cshtml" />
+    <Content Include="Views\Shared\_Banner.cshtml" />
+    <Content Include="Views\Shared\_Navbar.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

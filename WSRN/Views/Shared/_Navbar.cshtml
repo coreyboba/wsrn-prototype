@@ -1,0 +1,48 @@
+﻿<div class="navbar navbar-fixed-top navbar-inverse navbar-wsr" style="background-color: white;">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span style="padding-right: 50px;">@Html.ActionLink("WSR", "Index", "Home", new { area = "" }, new { @class = "navbar-brand wsr-font" })</span>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown" style="padding:0 25px 0 0;">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">News <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>@Html.ActionLink("News", "News", "PVE")</li>
+                        <li>@Html.ActionLink("Articles", "Articles", "PVE")</li>
+                        <li>@Html.ActionLink("Discussion", "Discussion", "PVE")</li>
+                    </ul>
+                </li>
+                <li class="dropdown" style="padding:0 25px 0 0;">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Articles <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>@Html.ActionLink("News", "News", "PVP")</li>
+                        <li>@Html.ActionLink("Articles", "Articles", "PVP")</li>
+                        <li>@Html.ActionLink("Discussion", "Discussion", "PVP")</li>
+                    </ul>
+                </li>
+                <li class="dropdown" style="padding:0 25px 0 0;">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Guides <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>@Html.ActionLink("News", "News", "RP")</li>
+                        <li>@Html.ActionLink("Articles", "Articles", "RP")</li>
+                        <li>@Html.ActionLink("Discussion", "Discussion", "RP")</li>
+                    </ul>
+                </li>
+                <li class="dropdown" style="padding:0 25px 0 0;">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Discussion <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>@Html.ActionLink("News", "News", "Dev")</li>
+                        <li>@Html.ActionLink("Articles", "Articles", "Dev")</li>
+                        <li>@Html.ActionLink("Discussion", "Discussion", "Dev")</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
