@@ -258,6 +258,7 @@
     <Content Include="Content\Layout.css.map">
       <DependentUpon>Layout.css</DependentUpon>
     </Content>
+    <Content Include="Content\buttons.less" />
     <None Include="Properties\PublishProfiles\WSRN.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

@@ -1,10 +1,10 @@
 ﻿@import "bootstrap/bootstrap";
-@import "site-variables";
+@import "buttons.less";
 @import "Theme";
 @import "Misc";
 @import "Layout";
 @import "Typography";
-
+@import "site-variables";
 body {
     
     padding-bottom: 20px;
@@ -57,9 +57,29 @@ nav .navbar-toggle {
 }
 
 .navbar-brand {
-  font-size: 30px;
-}
+  float: left;
+  padding: @navbar-padding-vertical @navbar-padding-horizontal;
+  font-size: @font-size-h1;
+  font-weight: bold;
+  line-height: @line-height-computed;
+  height: @navbar-height;
 
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  > img {
+    display: block;
+  }
+
+  @media (min-width: @grid-float-breakpoint) {
+    .navbar > .container &,
+    .navbar > .container-fluid & {
+      margin-left: -@navbar-padding-horizontal;
+    }
+  }
+}
 
 
 nav.navbar.shrink {
@@ -83,4 +103,53 @@ nav.shrink .navbar-toggle {
 
 .wsr-font {
     font-family: 'Audiowide', cursive;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+ }
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: @zindex-dropdown;
+  display: none; // none by default, but block on "open" of the menu
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0; // override default ul
+  list-style: none;
+  font-size: @font-size-base;
+  text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+  background-color: @dropdown-bg;
+  border: 1px solid @dropdown-fallback-border; // IE8 fallback
+  border: 1px solid @dropdown-border;
+  border-radius: 0;
+  .box-shadow(0 6px 12px rgba(0,0,0,.175));
+  background-clip: padding-box; 
+
+  // Aligns the dropdown menu to right
+  //
+  // Deprecated as of 3.1.0 in favor of `.dropdown-menu-[dir]`
+  &.pull-right {
+    right: 0;
+    left: auto;
+  }
+
+  // Dividers (basically an hr) within the dropdown
+  .divider {
+    .nav-divider(@dropdown-divider-bg);
+  }
+
+  // Links within the dropdown menu
+  > li > a {
+    display: block;
+    padding: 0 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 0;
+    color: @dropdown-link-color;
+    white-space: nowrap; // prevent links from randomly breaking onto new lines
+  }
 }
