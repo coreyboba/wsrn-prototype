@@ -6842,4 +6842,9 @@ nav.shrink .navbar-toggle {
   color: #000000;
   white-space: nowrap;
 }
+@media (min-width: 1200px) {
+  .container {
+    width: 1700px;
+  }
+}
 /*# sourceMappingURL=Site.css.map */
