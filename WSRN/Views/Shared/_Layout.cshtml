@@ -8,11 +8,13 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body style="background-image: url(../../Content/Images/spacebackground.jpg ); background-repeat: no-repeat; background-attachment:fixed;">
+<body style="background-image: url(../../Content/Images/spacebackground.jpg ); background-repeat: no-repeat; background-attachment:fixed; padding: 0; margin: 0;">
 
     @Html.Partial("~/Views/Shared/_Navbar.cshtml")
-
-    <div class="container body-content" style="border: 1px solid black; background-color: #fff;">
+    <div>
+        @Html.Partial("~/Views/Shared/_Banner.cshtml")
+    </div>
+    <div class="container-fluid body-content" style="border: 1px solid black; background-color: #111;">
         @RenderBody()
     </div>
 
