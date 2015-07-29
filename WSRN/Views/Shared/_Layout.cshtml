@@ -17,8 +17,10 @@
     <div class="container-fluid body-content" style="border: 1px solid black; background-color: #111;">
         @RenderBody()
     </div>
-
-    @Html.Partial("~/Views/Shared/_Footer.cshtml")
+    <div class="container-fluid">
+        @Html.Partial("~/Views/Shared/_Footer.cshtml")
+    </div>
+    
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
